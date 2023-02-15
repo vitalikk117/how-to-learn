@@ -13,9 +13,19 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background: color #1f1f1f;
   /* выше установили ограничения для секции */
 }
-
+.header_title {
+  line-height: 96px;
+  font-size: 102px;
+  font:600;
+  }
+  .header_subtitle{
+    line-height: 25px;
+  font-size: 18px;
+  font-weight:normal;
+  }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
