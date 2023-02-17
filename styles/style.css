@@ -26,7 +26,7 @@
   background: center cover;
 }
 
-.logo_place-header
+.logo_place_header
 {position: absolute;
  top: 30px;
  left: 64px;
@@ -76,26 +76,27 @@
 .header__main-illustration
 { width: 765px;
   height: 608px;
-  background-size: cover;
   position:absolute;
   right: 0;
   bottom: 0;
+  object-fit: contain;
+  object-position: right bottom;
 }
 
 .description
 { margin: 0;
   padding:0;
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 
-.two-column
+.two-columns
 { width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.two-column__brief
+.two-columns__brief
  {margin: 0;
   max-width: 175px;
  font-size: 18px;
@@ -104,12 +105,12 @@
  line-height: 1.2;
 }
 
-.two-column__main-text
+.two-columns__main-text
  {width: 80%;
   min-width: 784px;
  }
 
- .two-column__paragraph
+ .two-columns__paragraph
    {font-size: 24px;
     line-height: 34px;
     font-weight: normal;
@@ -117,26 +118,28 @@
   }
   
   /*Делаем выравнивание парафграфов сначала блока*/
-  .two-column__paragraph:first-of-type
+  .two-columns__paragraph:first-of-type
   { margin-top: 0;
   }
 
-  .two-column__span-accent
+  .two-columns__span-accent
   { line-height: 34px;
     font-size: 24px;
     font-weight: 600; 
   }
 
   .digits
-  { margin: 0;/*обнуление границ и отступов*/
+  { 
+    margin: 0;/*обнуление границ и отступов*/
     padding: 0;
     padding-top: 100px;
   }
   .section__title
-  { margin: 0;
+  { 
+    margin: 0;
     padding: 0;
     width: 60%;
-    margin-left: 200px;
+    margin-left: 350px;
     text-align: center;
     line-height: 1.15;
     font-size: 60px;
@@ -144,10 +147,11 @@
   }
 
 .section-subtitle 
-{ width: 60%;
+{ 
+  width: 60%;
   margin: 0;
   padding: 0;
-  margin-left: 200px;
+  margin-left: 350px;
   margin-top: 20px;
   line-height: 34px;
   font-size: 24px;
@@ -164,6 +168,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto 100px;
+}
+.digits__title
+{
+padding-left: 550px;
+width: 60%;
+line-height: 1.15;
+font-size: 60px;
+font-weight: 600px;
+}
+
+.digits__subtitle
+{
+padding-left: 700px;
+width: 60%;
+line-height: 34px;
+font-size: 24px;
+font-weight: normal;
 }
 
 .table__cell 
@@ -189,7 +210,7 @@ margin: 0;
 
 .feynman 
 { position:relative;
-  height: 890px;
+  min-height: 890px;/*ставим минимальную высоту блоку чтобы текст не терял свойства если не вмещается*/
   background: #f2f2f2;
   margin: 0 auto;
   padding: 100px;
@@ -241,21 +262,14 @@ z-index: 1;
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.kaufman-triangle
- {
-  width: 877px;
-  height: 877px;
-  position: absolute;
-  right: -210px;
-  top: 0;
-}
+
 
 .table_theme_dark 
 {
   margin:0 auto;
 }
 
-.section-title-theme_dark
+.section-title_theme_dark
 {width: 60%;
   margin: 0;
   padding: 0;
@@ -267,7 +281,7 @@ z-index: 1;
   margin-left: 350px;
 }
 
-.section-subtitle-theme-dark/*подзаголовок секции*/
+.section-subtitle_theme_dark/*подзаголовок секции*/
 {width: 60%;
   margin: 0;
   padding: 0;
@@ -304,6 +318,17 @@ z-index: 1;
   font-weight:normal;
 }
 
+.kaufman__triangle
+ {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  }
+
 .footer
 {
   color: white;
@@ -323,7 +348,7 @@ z-index: 1;
 
 .footer__column_content_info/* o projecte*/
 {
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 .footer__column
@@ -392,7 +417,7 @@ z-index: 1;
   width: 16px;
   height: 16px;
 }
-.logo_place-footer
+.logo_place_footer
 {
   width: 228px;
   height: 32px;
