@@ -200,6 +200,7 @@
 /*section feinman*/
 
 .feynman {
+  margin: 0;
   min-height: 890px;/*ставим минимальную высоту блоку чтобы текст не терял свойства если не вмещается*/
   position: relative;
   background: #f2f2f2 url('../images/feynman.png') no-repeat left bottom;
@@ -230,7 +231,6 @@
 }
 
 .feynman__link {
-  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -278,9 +278,8 @@
 }
 
 .table_theme_dark {
-  margin: 0;
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
 }
 
 
@@ -390,7 +389,7 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 }
 
 .footer__column-link {
