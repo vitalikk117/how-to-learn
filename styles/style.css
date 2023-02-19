@@ -143,7 +143,7 @@
   margin: 100px auto;
 }
 
-.section-title {
+.section-title_theme_dark {
   margin: 0;
   text-align: center;
   max-width: 60%;
@@ -153,7 +153,7 @@
   padding: 0 20%;
 }
 
-.section-subtitle {
+.section-subtitle_theme_dark {
   margin: 0;
   max-width: 60%;
   line-height: 34px;
@@ -240,11 +240,7 @@
   top: 50%;
   right: 48px;
   z-index: 2;
-  }
-
-.feynman__link:hover
-{opacity:.6;}
-
+}
 
 /*section kaufman*/
 
@@ -411,11 +407,6 @@
   width: 16px;
   height: 16px;
   margin-right: 5px;
-}
-
-.list-item {
-  width: 16px;
-  height: 16px;
 }
 
 .logo_place_footer {
