@@ -64,7 +64,11 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
-  cursor: pointer;
+}
+
+.header__link:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
 }
 
 .header__square-pic {
@@ -75,7 +79,10 @@
   top: 64px;
   right: 0;
   border: .1px solid #2f80ed;
+  animation: rotation linear 20s infinite;
 }
+
+
 
 .header__main-illustration {
   display: block;
@@ -105,7 +112,7 @@
 
 .two-columns__brief {
   margin: 0;
-  margin: 5px 20px 0 0;
+  margin-right: 20px;
   max-width: 175px;
   font-size: 18px;
   font-weight: normal;
@@ -118,15 +125,16 @@
 }
 
 .two-columns__main-text {
+  margin: 0;
   width: 80%;
   min-width: 784px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
 }
 
 .two-columns__paragraph {
   margin: 0;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
   margin-top: 30px;
 }
 
@@ -137,10 +145,12 @@
   font-weight: 600;
 }
 
-/*section digit*/
+/*section techniques*/
 
-.digits {
+.techniques {
   margin: 100px auto;
+  max-width: 80%;
+  border: .1px solid #2f80ed;
 }
 
 .section-title {
@@ -149,52 +159,106 @@
   max-width: 60%;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600px;
-  padding: 0 20%;
+  font-weight: 600;
+  border: .1px solid #2f80ed;
 }
 
 .section-subtitle {
   margin: 0;
   max-width: 60%;
+  text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-top: 20px;
-  text-align: center;
-  padding: 0 20%;
+  border: .1px solid #2f80ed;
 }
 
-.table {
+.cards {
+  margin: 0 auto;
   padding: 0;
-  max-width: 1100px;
-  min-width: 250px;
-  list-style: none;/*убираем точки у элементов таблицы впереди*/
+  list-style: none;
+  max-width: 920px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
+  border: .1px solid #2f80ed;
 }
 
-.table__cell {
+.cards-item {
   margin: 0;
-  padding: 0px;
-  width: 250px;
   margin-top: 60px;
+  margin-right: 100px;
+  max-width: 240px;
+  text-align: center;
+
 }
 
-.table__heading {
-  margin: 0;
+.cards-item:nth-of-type(3) {
+  margin-right: 0px;
+}
+
+.card-image {
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: .1px solid #2f80ed;
+  display:block;
+}
+
+.cards-title {
+  margin: 43px 0 0;
+  text-align: center;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
+  border: .1px solid #2f80ed;
 }
 
-.table__text {
-  margin: 0;
-  line-height: 1.2;
+.cards-description {
+  margin: 16px 0 0;
+  line-height: 23px;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
+  border: .1px solid #2f80ed;
+}
+
+/*section video*/
+
+.video {
+  margin: 100px auto 0;
+  max-width: 80%;
+}
+
+.section-title {
+  margin: 0;
+}
+
+.section-subtitle {
+  margin: 0;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin-right: 20px;
+}
+
+/*section oakley*/
+
+.oakley {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: -1;
+  border: 1px solid red;
 }
 
 /*section feinman*/
@@ -242,6 +306,151 @@
   z-index: 2;
 }
 
+.feynman__link:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
+
+
+/*section digit*/
+
+.digits {
+  margin: 100px auto;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0 20%;
+}
+
+.section-subtitle {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0 20%;
+}
+
+.table {
+  padding: 0;
+  max-width: 1100px;
+  min-width: 250px;
+  list-style: none;/*убираем точки у элементов таблицы впереди*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.table__cell {
+  margin: 0;
+  padding: 0px;
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+
+/*section khan*/
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+  border: 1px solid red;
+}
+
+.khan__container {
+  max-width: 80%;
+  margin: auto;
+  border: 1px solid red;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  border: 1px solid red;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 0;
+  margin-top: 50px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.khan__quote-author {
+  margin: 0;
+  margin-top: 36px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  border: 1px solid red;
+}
+
+.khan__quote-author-subline {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.khan__book-container {
+  margin-top: 68px;
+  display: flex;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  background-image: url(../khan-book.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  margin-right: 48px;
+}
+
+.khan__buy-link {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #2f80ed;
+  border: 1px solid red;
+  position: relative;
+}
+
+.khan__buy-link:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
+
 /*section kaufman*/
 
 .kaufman {
@@ -254,24 +463,14 @@
 
 .section-title_theme_dark {
   margin: 0;
-  text-align: center;
   position: relative;
-  max-width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
   padding: 0 20%;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   margin: 0;
-  text-align: center;
   position: relative;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   margin-top: 20px 0 0;
   padding: 0 20%;
   z-index: 1;
@@ -283,6 +482,7 @@
 }
 
 /*табличная ячейка*/
+
 .table__cell_theme_dark {
   width: 200px;
   margin: 0;
@@ -295,17 +495,12 @@
 
 .table__heading_theme_dark {
   margin: 0;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
 }
 
 .table__text_theme_dark {
   margin: 0;
   padding-top: 20px;/*отступ цифр от текста ячейки*/
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
+
 }
 
 .kaufman__triangle {
@@ -316,6 +511,84 @@
   position: absolute;
   right: -210px;
   top: 0;
+  animation: rotation linear 20s infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+}
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*section resources*/
+
+.resourses {
+  margin-top: 100px;
+  border: 1px solid red;
+}
+
+.section-title {
+  margin: 0;
+}
+
+.section-subtitle {
+  margin: 20px 0 0;
+}
+
+.resourses__logo-zone {
+  margin: 80px auto 217px;
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  border: 1px solid red;
+}
+
+.resourses__logo {
+  margin: 0;
+  width:270px;
+  height: 38px;
+  background: center no-repeat;
+  background-size: contain;
+  border: 1px solid red;
+}
+
+.resourses__link-arzamas {
+  background-image: url(/resources-arzamas.svg);
+}
+
+.resourses__link-arzamas:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
+
+.resourses__link-n1 {
+  background-image: url(/logo/resources-n1.svg);
+}
+
+.resourses__link-n1:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
+
+.resourses__link-strelka {
+  background-image: url(/logo/resources-strelka.svg);
+}
+
+.resourses__link-strelka:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
+
+.resourses__link-polka {
+  background-image: url(/logo/resources-polka.svg);
+}
+
+.resourses__link-polka:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
 }
 
 /*footer*/
@@ -335,7 +608,7 @@
   margin: auto;
 }
 
-/* o projecte*/
+/*о проэкте*/
 .footer__column_content_info {
   margin-right: 50px;
 }
@@ -393,15 +666,23 @@
   cursor: pointer;
 }
 
+.footer__column-link:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 5px;
 }
 
+.footer__social-icon:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
+
 .logo_place_footer {
-  width: 228px;
-  height: 32px;
   margin-top: 0;
   color: #fff;
 }
