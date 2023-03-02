@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 /*header*/
@@ -556,7 +556,7 @@
 }
 
 .resourses__link-arzamas {
-  background-image: url(/resources-arzamas.svg);
+  background-image: url(../images/resources-arzamas.svg);
 }
 
 .resourses__link-arzamas:hover {
@@ -565,7 +565,7 @@
 }
 
 .resourses__link-n1 {
-  background-image: url(/logo/resources-n1.svg);
+  background-image: url(../images/resources-n1.svg);
 }
 
 .resourses__link-n1:hover {
@@ -574,7 +574,7 @@
 }
 
 .resourses__link-strelka {
-  background-image: url(/logo/resources-strelka.svg);
+  background-image: url(../images/resources-polka.svg);
 }
 
 .resourses__link-strelka:hover {
@@ -583,7 +583,7 @@
 }
 
 .resourses__link-polka {
-  background-image: url(/logo/resources-polka.svg);
+  background-image: url(../images/resources-strelka.svg);
 }
 
 .resourses__link-polka:hover {
