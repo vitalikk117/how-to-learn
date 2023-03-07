@@ -1,0 +1,7 @@
+.table__cell {
+  width: 250px;
+  margin: 0;
+  padding: 0px;
+  list-style: none;/*убираем точки у элементов таблицы впереди*/
+  margin-top: 60px;
+}

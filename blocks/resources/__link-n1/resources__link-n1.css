@@ -1,0 +1,8 @@
+.resources__link-n1 {
+  background-image: url(../../../images/resources-n1.svg);
+}
+
+.resources__link-n1:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}

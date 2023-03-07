@@ -1,0 +1,8 @@
+.resources__link-arzamas {
+  background-image: url(../../../images/resources-arzamas.svg);
+}
+
+.resources__link-arzamas:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}

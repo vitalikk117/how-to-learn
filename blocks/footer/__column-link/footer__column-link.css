@@ -1,0 +1,14 @@
+.footer__column-link {
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;/*убрал точки у списка*/
+  color: #fff;
+  line-height: 30px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.footer__column-link:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}
