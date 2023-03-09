@@ -5,3 +5,8 @@
   background: center no-repeat;
   background-size: contain;
 }
+
+.resources__logo:hover {
+  transition: all linear 0.3s;
+  opacity: 0.5; /*Прозрачность изображения*/
+}

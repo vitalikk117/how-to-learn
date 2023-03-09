@@ -1,8 +1,0 @@
-.resources__link-polka {
-  background-image: url(../../../images/resources-strelka.svg);
-}
-
-.resources__link-polka:hover {
-  transition: all linear 0.3s;
-  opacity: 0.5; /*Прозрачность изображения*/
-}
