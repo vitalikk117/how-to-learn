@@ -8,9 +8,9 @@
   top: 50%;
   right: 48px;
   z-index: 2;
+  transition: all linear 0.3s;
 }
 
 .feynman__link:hover {
-  transition: all linear 0.3s;
   opacity: 0.5; /*Прозрачность изображения*/
 }

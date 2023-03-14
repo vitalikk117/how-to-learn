@@ -87,9 +87,9 @@
 
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
-@import url(../blocks/section-title/_theme-dark/section-title_theme-dark.css);
-@import url(../blocks/section-subtitle/_theme-dark/section-subtitle_theme-dark.css);
-@import url(../blocks/table/__cell/_theme-dark/table__cell_theme-dark.css);
+@import url(../blocks/kaufman/__section-title/_theme-dark/kaufman__section-title_theme-dark.css);
+@import url(../blocks/kaufman/__section-subtitle/_theme-dark/kaufman__section-subtitle_theme-dark.css);
+@import url(../blocks/kaufman/__table/__cell/_theme-dark/kaufman__table__cell_theme-dark.css);
 
 /*section resources*/
 
@@ -105,10 +105,10 @@
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__column/footer__column.css);
 @import url(../blocks/footer/__author/footer__author.css);
-@import url(../blocks/footer/__column/_content-info/footer__column_content-info.css);
-@import url(../blocks/footer/__column/_content-copyright/footer__column_content-copyright.css);
-@import url(../blocks/footer/__column/_content-social/footer__column_content-social.css);
-@import url(../blocks/footer/__column/__column-links/footer__column-links.css);
+@import url(../blocks/footer/__column/_content/_info/footer__column_content_info.css);
+@import url(../blocks/footer/__column/_content/_copyright/footer__column_content_copyright.css);
+@import url(../blocks/footer/__column/_content/_social/footer__column_content_social.css);
+@import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);

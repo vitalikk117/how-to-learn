@@ -6,9 +6,9 @@
   line-height: 30px;
   font-weight: normal;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 
 .footer__column-link:hover {
-  transition: all linear 0.3s;
   opacity: 0.5; /*Прозрачность изображения*/
 }

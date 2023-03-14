@@ -2,4 +2,5 @@
   margin: 0;/*сбросили отступы внутренние и внешние*/
   padding: 0;
   list-style: none;/*убрали точки у списков ul*/
+  margin-bottom: 16px;
 }

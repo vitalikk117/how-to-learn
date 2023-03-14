@@ -3,7 +3,8 @@
   width: 765px;/*выставили главную картинку header*/
   height: 608px;
   position: absolute;
-  object-fit: fill;
+  object-fit: cover;
+  object-position: 0 0;
   right: 0px;
   bottom: 0px;
   z-index: 1;/*картинка становится выше над квадратом*/
